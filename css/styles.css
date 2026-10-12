@@ -160,7 +160,7 @@ nav {
             rgba(41, 39, 53, 0.55),
             rgba(41, 39, 53, 0.55)
         ),
-        url("images/bg-bookshelf.jpg");
+        url("../images/bg-bookshelf.jpg");
 
     background-size: cover;
     background-position: center;
@@ -372,6 +372,59 @@ footer p {
     .page-card {
         width: 100%;
         max-width: 400px;
+    }
+}
+
+/* ---------------------------------------
+   PROJECT 2 FINAL REVISIONS
+   --------------------------------------- */
+
+/* Make section headings easier to read */
+.intro-section h2,
+.page-links h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Center Tech Hero portraits */
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 35px 20px;
+    background: var(--light);
+}
+
+.hero-portrait {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(41, 39, 53, 0.12);
+}
+
+/* Improve keyboard accessibility */
+a:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 750px) {
+
+    .intro-section h2,
+    .page-links h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-portrait {
+        max-width: 250px;
     }
 
 }
