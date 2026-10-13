@@ -428,3 +428,166 @@ a:focus-visible {
     }
 
 }
+
+/* -----------------------------------------
+   EDUCATIONAL VISUALS
+   ----------------------------------------- */
+
+.educational-image {
+    width: min(100%, 480px);
+    margin: 30px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.educational-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(41, 39, 53, 0.12);
+}
+
+.educational-image figcaption {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+/* Intersectionality diagram */
+
+.intersection-diagram {
+    position: relative;
+    width: min(100%, 340px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+
+.identity-circle {
+    position: absolute;
+    width: 55%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 2px solid rgba(41, 39, 53, 0.1);
+}
+
+.identity-race {
+    top: 4%;
+    left: 22.5%;
+    background: rgba(224, 156, 177, 0.65);
+}
+
+.identity-gender {
+    top: 36%;
+    left: 4%;
+    padding-top: 32%;
+    padding-right: 24%;
+    background: rgba(165, 146, 213, 0.65);
+}
+
+.identity-class {
+    top: 36%;
+    right: 4%;
+    padding-top: 32%;
+    padding-left: 24%;
+    background: rgba(235, 184, 132, 0.65);
+}
+
+.identity-center {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--darkgray);
+    color: white;
+    padding: 9px 12px;
+    border-radius: 25px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/* IAT example */
+
+.iat-example {
+    background: #24222e;
+    color: white;
+    padding: 18px;
+    border-radius: 12px;
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.iat-categories,
+.iat-keys {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+}
+
+.iat-categories span {
+    max-width: 45%;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.iat-word {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.iat-keys {
+    color: #ddd5f0;
+    font-size: 0.75rem;
+}
+
+/* Small screens */
+
+@media (max-width: 750px) {
+    .educational-image {
+        padding: 0 8px;
+    }
+
+    .identity-circle {
+        font-size: 0.75rem;
+    }
+
+    .identity-center {
+        font-size: 0.65rem;
+        padding: 8px;
+    }
+}
+
+/* Resources page card improvements */
+.page-links .page-cards {
+    align-items: stretch;
+}
+
+.page-links .page-card {
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Keep educational visuals inside cards */
+.page-card .educational-image {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* Keep resource buttons at the bottom */
+.page-card .btn {
+    margin-top: auto;
+}
