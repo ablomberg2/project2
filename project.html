@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class = "project-page">
 
     <nav>
         <ul>
@@ -29,30 +29,47 @@
     <main class="content-wrap">
 
         <section class="intro-section">
-            <h2>About Our Project</h2>
+            <h2>Connection to Unmasking AI</h2>
             <p>
-                For our project, Fatma Azzab and I created an image classifier
-                that can tell the difference between keys and coins. We used
-                Google's Teachable Machine to train an AI model using 200
-                original images that we collected ourselves. Each of us
-                contributed 50 key images and 50 coin images.
+              Our group is Fatma Azzab and Addie Blomberg, and for our project, we decided to create an image classifier that can distinguish between keys and coins. We chose this idea because it was simple enough for us to build yet still gave us a chance to learn how artificial intelligence works. We used Google's Teachable Machine to create two categories, Keys and Coins, and trained the model using pictures we took ourselves. We both contributed 100 original images, with 50 pictures of keys and 50 pictures of coins, for a total of 200 pictures.
             </p>
 
             <p>
-                Our goal was to explore how artificial intelligence learns
-                from examples and how well it can recognize everyday objects.
-                We added the model to our website so visitors can use their
-                camera to test it and see its predictions in real time.
+              The goal was to see how well an AI model could recognize everyday objects based on the examples it was given. We also wanted people to be able to try it themselves, so we added the classifier to our website. Visitors can turn on their camera, hold up a key or a coin, and watch the model predict in real time. After collecting our pictures and training the model, we tested it with different objects to see how accurately it could tell the two categories apart.
+Our project connects to some of the ideas Joy Buolamwini discusses in Unmasking AI, especially her argument that artificial intelligence is not automatically objective or unbiased. People build AI systems, and the choices made during development affect how they work. Buolamwini explores this through the idea of the “coded gaze,” showing how human biases can become part of technology and lead to certain people being overlooked or misrepresented. Her research focuses on facial recognition and analysis, which is very different from our project, but it raises a question about how much the information used to train an AI system affects what it can recognize.
+
             </p>
 
             <p>
-                While the model recognized keys and coins almost perfectly
-                during our testing, it sometimes became confused when we
-                showed it a phone. Since we only trained it to recognize two
-                categories, it tried to classify the phone as either a key
-                or a coin. This helped us understand that AI models have
-                limitations and depend heavily on the data they are given.
+                For our classifier, the answer became pretty clear. The model can only learn from the pictures we give it. It does not actually understand what a key or a coin is; it looks for patterns in the images and uses those patterns to decide which category something belongs to. This means that the variety of our training pictures matters. Keys come in different shapes and sizes, and coins have different designs and colors. If we only showed the model one kind of key or coin, it might struggle when someone showed it something that looked a little different. We wanted our dataset to include different examples so the model would have a better chance of recognizing the objects outside of the exact pictures it was trained on.
+
             </p>
+
+            <p>
+                When we tested the finished model, it recognized keys and coins almost perfectly, which was better than we expected. However, we noticed that it got confused when we held a phone up to the camera, especially when we changed the angle. Sometimes it would identify the phone as a key, and other times it would identify it as a coin. This made sense once we thought about how we had trained the model. Since we only gave it two categories to choose from, it had no way to say that the object was something completely different. It simply picked whichever category seemed like the closest match.
+
+            </p>
+
+            <p>
+                That was an important part of testing because it showed us that a model can perform really well at the task it was designed for while still having obvious limitations. If we wanted to improve it, we could add a third category for phones or a general category for objects that are neither keys nor coins. We could also collect more pictures with different angles, backgrounds, and lighting. The phone example helped us see why testing with unfamiliar objects is just as important as testing with the objects the model is supposed to recognize.
+
+            </p>
+
+            <p>
+                This connects to Buolamwini's discussion of training data in Unmasking AI. Her research shows that when AI systems are trained on limited or unrepresentative information, they can fail for people who were not properly included in the development process. Our project is not making decisions about people, so the consequences are very different. Still, the underlying idea is worth considerinng. A model's abilities depend heavily on the examples it is given. If the information used to train it is limited, its results will be limited too. It is easy to assume that a computer-generated prediction must be correct, but our experience showed us that this is not always the case.
+
+            </p>
+
+            <p>
+                Building the classifier also made us think more about the responsibility involved in creating AI. We decided which categories to include, took the pictures, trained the model, and chose how to test it. Every one of those decisions affected the final result. Even though Teachable Machine handled most of the technical training process, we were still responsible for the information it learned. This made the project feel less like simply using an AI tool and more like understanding how one is created.
+
+            </p>
+
+            <p>
+              In conclusion, making the Keys vs. Coins classifier helped us see both how useful AI can be and where it can fall short. It was exciting to see the model recognize our objects so accurately, but the phone test reminded us that it does not understand the world the way a person does. Connecting our experience to Unmasking AI made us think more carefully about the data behind these systems and the choices people make when developing them. AI can be a helpful tool, but its results should not be accepted without question. We need to understand how it was trained, test how it performs, and recognize that even a model that seems accurate can make mistakes.
+
+            </p>
+
         </section>
 
         <section class="intro-section">
