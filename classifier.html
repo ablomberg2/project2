@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keys vs. Coins Classifier</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Ms+Madi&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="js/classifier.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main navigation -->
+    <nav class="bg-dark">
+        <ul class="list-reset nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="techhero.html">Tech Hero</a></li>
+            <li><a href="classifier.html">Classifier</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page heading -->
+    <header class="page-header">
+        <div class="content-wrap">
+            <p class="small-heading">MACHINE LEARNING PROJECT</p>
+            <h1>Keys vs. Coins</h1>
+            <p class="intro-text">
+                Can a machine learning model tell the difference between
+                keys and coins? Try our image classifier to find out!
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Project introduction -->
+        <section class="intro-section">
+            <div class="content-wrap">
+                <h2>Try the Classifier</h2>
+
+                <p>
+                    This image classifier was trained using photographs of
+                    keys and coins. Use your camera to show the model an
+                    object and see which category it predicts.
+                </p>
+
+                <p>
+                    Hold one object in front of your camera at a time.
+                    Try different keys and coins to see how well the model
+                    recognizes them.
+                </p>
+            </div>
+        </section>
+
+        <!-- Classifier -->
+        <section class="page-links">
+            <div class="content-wrap classifier-content">
+
+                <h2>Test the Model</h2>
+
+                <div class="classifier-card">
+                    <p id="camera-status" aria-live="polite">
+                        Select Start Camera to begin.
+                    </p>
+
+                    <div class="classifier-buttons">
+                        <button class="btn" id="start-button" type="button">
+                            Start Camera
+                        </button>
+
+                        <button class="btn" id="stop-button" type="button" hidden>
+                            Stop Camera
+                        </button>
+                    </div>
+
+                    <div id="webcam-container"></div>
+
+                    <h3>Predictions</h3>
+
+                    <div id="label-container" aria-live="polite">
+                        Your predictions will appear here.
+                    </div>
+
+                    <p id="error-message" role="alert"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project information -->
+        <section class="intro-section">
+            <div class="content-wrap">
+                <h2>About This Project</h2>
+
+                <p>
+                    We created this project to explore how image
+                    classification and machine learning work. Our model
+                    was trained with original photographs of keys and
+                    coins collected by our group.
+                </p>
+
+                <p>
+                    The model looks for patterns in the images it was
+                    trained on and uses those patterns to make predictions.
+                    Its predictions are not always guaranteed to be correct.
+                    Differences in lighting, backgrounds, and camera angles
+                    can affect its results.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="content-wrap">
+            <p>Keys vs. Coins Image Classification Project</p>
+            <p class="copyright">LIS 500 | 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
